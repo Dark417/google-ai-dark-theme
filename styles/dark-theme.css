@@ -1,0 +1,218 @@
+/* ===============================================
+   Google AI Mode Dark Theme
+   Premium dark theme with customizable brightness
+   =============================================== */
+
+:root {
+  --dark-bg-primary: #0d1117;
+  --dark-bg-secondary: #161b22;
+  --dark-bg-tertiary: #21262d;
+  --dark-bg-elevated: #1c2128;
+  --dark-border: #30363d;
+  --dark-border-subtle: #21262d;
+
+  --text-primary: hsl(210, 20%, 80%);
+  --text-secondary: hsl(210, 10%, 55%);
+  --text-muted: hsl(210, 10%, 40%);
+  --text-link: hsl(210, 80%, 65%);
+  --text-link-hover: hsl(210, 85%, 75%);
+  --accent-green: hsl(140, 60%, 50%);
+}
+
+/* ===============================================
+   MASTER OVERRIDE - Force dark everywhere
+   =============================================== */
+.google-ai-dark-theme,
+.google-ai-dark-theme *,
+.google-ai-dark-theme *::before,
+.google-ai-dark-theme *::after {
+  background-color: var(--dark-bg-primary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--dark-border-subtle) !important;
+}
+
+html.google-ai-dark-theme,
+html.google-ai-dark-theme body {
+  background-color: var(--dark-bg-primary) !important;
+}
+
+/* ===============================================
+   DROPDOWN MENUS & POPUPS - Critical Fix
+   =============================================== */
+.google-ai-dark-theme [role="menu"],
+.google-ai-dark-theme [role="listbox"],
+.google-ai-dark-theme [role="dialog"],
+.google-ai-dark-theme [role="tooltip"],
+.google-ai-dark-theme [data-menu],
+.google-ai-dark-theme .dropdown,
+.google-ai-dark-theme .menu,
+.google-ai-dark-theme .popup,
+.google-ai-dark-theme .modal,
+.google-ai-dark-theme div[jsaction*="menu"],
+.google-ai-dark-theme div[jscontroller][class*="menu"],
+.google-ai-dark-theme .UUbT9,
+.google-ai-dark-theme .aajZCb,
+.google-ai-dark-theme .G43f7e,
+.google-ai-dark-theme .sbhl,
+.google-ai-dark-theme .sbl1,
+.google-ai-dark-theme .erkvQe,
+.google-ai-dark-theme .CcNe6e,
+.google-ai-dark-theme .XDyW0e,
+.google-ai-dark-theme .Tg7LZd,
+.google-ai-dark-theme .Q3DXx,
+.google-ai-dark-theme .c93Gbe,
+.google-ai-dark-theme .yp2Voe,
+.google-ai-dark-theme .nCV1we,
+.google-ai-dark-theme .A0MXYf {
+  background-color: var(--dark-bg-secondary) !important;
+  border: 1px solid var(--dark-border) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Menu items */
+.google-ai-dark-theme [role="menuitem"],
+.google-ai-dark-theme [role="option"],
+.google-ai-dark-theme .sbhl,
+.google-ai-dark-theme .G43f7e,
+.google-ai-dark-theme div[role="menu"]>div,
+.google-ai-dark-theme .yT0WJe,
+.google-ai-dark-theme .d9FyLd {
+  background-color: var(--dark-bg-secondary) !important;
+}
+
+.google-ai-dark-theme [role="menuitem"]:hover,
+.google-ai-dark-theme [role="option"]:hover,
+.google-ai-dark-theme .sbhl:hover,
+.google-ai-dark-theme .G43f7e:hover {
+  background-color: var(--dark-bg-tertiary) !important;
+}
+
+/* ===============================================
+   Cards & Containers
+   =============================================== */
+.google-ai-dark-theme .g,
+.google-ai-dark-theme .MjjYud,
+.google-ai-dark-theme .NDNGvf,
+.google-ai-dark-theme .kp-wholepage,
+.google-ai-dark-theme .TzHB6b,
+.google-ai-dark-theme .liYKde,
+.google-ai-dark-theme .xpdopen,
+.google-ai-dark-theme .BjvG9b,
+.google-ai-dark-theme .iqGHOe,
+.google-ai-dark-theme .MUZtye,
+.google-ai-dark-theme .DZ13He,
+.google-ai-dark-theme .YNk70c,
+.google-ai-dark-theme .EjQTId,
+.google-ai-dark-theme #rhs {
+  background-color: var(--dark-bg-secondary) !important;
+}
+
+/* ===============================================
+   USER QUERY BUBBLE
+   =============================================== */
+.google-ai-dark-theme .yp2Voe,
+.google-ai-dark-theme .ho072b {
+  background-color: var(--dark-bg-tertiary) !important;
+  border: 1px solid var(--dark-border) !important;
+  border-radius: 16px !important;
+}
+
+/* ===============================================
+   LINKS - Use CSS variable for dynamic color
+   =============================================== */
+.google-ai-dark-theme a,
+.google-ai-dark-theme a *,
+.google-ai-dark-theme .LC20lb,
+.google-ai-dark-theme h3 a {
+  color: var(--text-link) !important;
+}
+
+.google-ai-dark-theme a:hover,
+.google-ai-dark-theme a:hover * {
+  color: var(--text-link-hover) !important;
+}
+
+/* URLs - always green */
+.google-ai-dark-theme cite,
+.google-ai-dark-theme .NJjxre,
+.google-ai-dark-theme .qLRx3b,
+.google-ai-dark-theme .tjvcx,
+.google-ai-dark-theme .ylgVCe {
+  color: var(--accent-green) !important;
+}
+
+/* ===============================================
+   Input / Search Box
+   =============================================== */
+.google-ai-dark-theme textarea,
+.google-ai-dark-theme input[type="text"],
+.google-ai-dark-theme input[name="q"],
+.google-ai-dark-theme .gLFyf,
+.google-ai-dark-theme .ITIRGe,
+.google-ai-dark-theme .RNNXgb,
+.google-ai-dark-theme .SDkEP,
+.google-ai-dark-theme .a4bIc {
+  background-color: var(--dark-bg-tertiary) !important;
+  border: 1px solid var(--dark-border) !important;
+}
+
+.google-ai-dark-theme input::placeholder,
+.google-ai-dark-theme textarea::placeholder {
+  color: var(--text-muted) !important;
+}
+
+/* ===============================================
+   Buttons
+   =============================================== */
+.google-ai-dark-theme button,
+.google-ai-dark-theme [role="button"],
+.google-ai-dark-theme .ya9Iof,
+.google-ai-dark-theme .eGAasd,
+.google-ai-dark-theme .uMMzHc {
+  background-color: var(--dark-bg-tertiary) !important;
+  border: 1px solid var(--dark-border-subtle) !important;
+}
+
+.google-ai-dark-theme button:hover,
+.google-ai-dark-theme [role="button"]:hover {
+  background-color: var(--dark-bg-elevated) !important;
+  border-color: var(--dark-border) !important;
+}
+
+/* ===============================================
+   Scrollbar
+   =============================================== */
+.google-ai-dark-theme ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.google-ai-dark-theme ::-webkit-scrollbar-track {
+  background: var(--dark-bg-primary) !important;
+}
+
+.google-ai-dark-theme ::-webkit-scrollbar-thumb {
+  background: var(--dark-border) !important;
+  border-radius: 5px;
+}
+
+/* ===============================================
+   Images & Icons - Keep transparent
+   =============================================== */
+.google-ai-dark-theme img,
+.google-ai-dark-theme svg,
+.google-ai-dark-theme svg *,
+.google-ai-dark-theme picture,
+.google-ai-dark-theme video,
+.google-ai-dark-theme canvas,
+.google-ai-dark-theme .lnXdpd,
+.google-ai-dark-theme img[alt="Google"] {
+  background-color: transparent !important;
+}
+
+/* ===============================================
+   Disable transitions while scrolling
+   =============================================== */
+.google-ai-dark-theme.scrolling * {
+  transition: none !important;
+}
